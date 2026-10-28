@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SwapZone - Used Products</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+    <div class="logo">
+        🔄 SwapZone
+    </div>
+
+    <button onclick="openSeller()">
+        + Sell Item
+    </button>
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h1>
+            Give Old Things
+            <span>New Homes.</span>
+        </h1>
+
+        <p>
+            Buy quality second-hand products or
+            sell things you no longer need.
+        </p>
+
+        <div class="search-area">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search laptops, bikes, books..."
+            >
+
+            <button onclick="searchItem()">
+                Search
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="hero-icon">
+        ♻️
+    </div>
+
+</section>
+
+
+<!-- FILTER -->
+
+<section class="filter">
+
+    <button onclick="filterItems('All')">
+        All Items
+    </button>
+
+    <button onclick="filterItems('Mobile')">
+        📱 Mobiles
+    </button>
+
+    <button onclick="filterItems('Laptop')">
+        💻 Laptops
+    </button>
+
+    <button onclick="filterItems('Furniture')">
+        🪑 Furniture
+    </button>
+
+    <button onclick="filterItems('Books')">
+        📚 Books
+    </button>
+
+    <button onclick="filterItems('Cycle')">
+        🚲 Cycles
+    </button>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section class="products">
+
+    <h2>🔥 Recently Added</h2>
+
+    <div
+        class="product-grid"
+        id="productGrid">
+    </div>
+
+</section>
+
+
+<!-- SELL FORM -->
+
+<section class="sell" id="sellBox">
+
+    <div class="sell-box">
+
+        <h2>📦 List Your Used Product</h2>
+
+        <input
+            id="itemName"
+            placeholder="Product name"
+        >
+
+        <select id="itemCategory">
+
+            <option value="">
+                Choose Category
+            </option>
+
+            <option>Mobile</option>
+            <option>Laptop</option>
+            <option>Furniture</option>
+            <option>Books</option>
+            <option>Cycle</option>
+
+        </select>
+
+        <input
+            id="itemPrice"
+            type="number"
+            placeholder="Selling price ₹"
+        >
+
+        <input
+            id="itemLocation"
+            placeholder="Location"
+        >
+
+        <select id="itemCondition">
+
+            <option value="">
+                Product condition
+            </option>
+
+            <option>Almost New</option>
+            <option>Good</option>
+            <option>Fair</option>
+
+        </select>
+
+        <textarea
+            id="itemDescription"
+            placeholder="Short description">
+        </textarea>
+
+        <button onclick="publishItem()">
+            Publish Item
+        </button>
+
+    </div>
+
+</section>
+
+
+<footer>
+    © 2026 SwapZone | Safe & Simple Used Product Marketplace
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
